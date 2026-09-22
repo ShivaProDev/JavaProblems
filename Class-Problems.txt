@@ -1,0 +1,13 @@
+
+1. Student Class
+
+Create a class Student with:
+
+rollNo
+name
+marks
+
+Methods:
+
+setData()
+displayData()
