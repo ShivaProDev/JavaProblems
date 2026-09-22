@@ -1,4 +1,4 @@
-1. Student Class
+# **1. Student Class**
 
 Create a class Student with:
 rollNo name marks
@@ -39,4 +39,136 @@ class Main {
         studTwo.displayData(); 
     } 
 }
+
+
 ```
+
+# **2. Rectangle Class**
+
+Create a class Rectangle.
+
+Data members:
+
+length
+width
+
+Methods:
+
+calculateArea()
+calculatePerimeter()
+
+Expected
+
+Area = 50
+Perimeter = 30
+
+```java
+class Rectangle {
+
+    int length;
+    int width;
+
+    public Rectangle(int length,int width){
+
+        this.length = length;
+        this.width = width;
+        
+    }
+
+    int calculateArea(){
+        int area = this.length * this.width;
+        return area;
+    }
+
+    int calculatePerimeter(){
+        int peri = 2 * (this.length+this.width) ;
+        return peri;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+       System.out.println("Environment Started");
+        Rectangle rectOne = new Rectangle(8,5);
+        Rectangle rectTwo = new Rectangle(6,4);
+        int rectOneArea = rectOne.calculateArea();
+        int rectOnePeri = rectOne.calculatePerimeter();
+        System.out.printf("Area = %d cm2",rectOneArea).println();
+        System.out.printf("Perimeter = %d cm",rectOnePeri).println();
+        int rectTwoArea = rectOne.calculateArea();
+        int rectTwoPeri = rectOne.calculatePerimeter();
+        System.out.printf("Area = %d cm2",rectTwoArea).println();
+        System.out.printf("Perimeter = %d cm",rectTwoPeri).println();
+        
+    }
+}
+
+```
+
+# **3. Bank Account**
+
+Create a class BankAccount.
+
+Variables:
+
+accountNumber
+holderName
+balance
+
+Methods:
+
+deposit(amount)
+withdraw(amount)
+displayBalance()
+
+```java
+
+class BankAccount {
+
+    int accountNumber;
+    String holderName;
+    int balance;
+
+    public BankAccount(int accountNumber,String holderName,int balance){
+
+        this.accountNumber = accountNumber;
+        this.holderName = holderName;
+        this.balance = balance;
+        
+    }
+
+    void deposit(int amount){
+         this.balance = this.balance + amount;
+    }
+
+    void withdraw(int amount){
+        this.balance = this.balance - amount;
+    }
+    void displayBalance(){
+        System.out.printf("Avaible balance is : %d",this.balance).println();
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+       System.out.println("Environment Started");
+        BankAccount AccuntOne = new BankAccount(12967,"Shiva",100);
+        BankAccount AccuntTwo = new BankAccount(12968,"Kiran",500);
+        AccuntOne.displayBalance();
+        AccuntOne.deposit(100);
+        AccuntOne.displayBalance();
+        AccuntOne.withdraw(50);
+        AccuntOne.displayBalance();
+        
+    
+        
+        
+    }
+}
+```
+
+
+
+
+
+
