@@ -170,6 +170,8 @@ class Main {
 ```
 
 # **Level 2: Constructors**
+
+
 ## **4. Employee Class**
 
 Create a class Employee.
@@ -227,6 +229,82 @@ class Main {
         
     }
 }
+```
+
+# **Level 5: Inheritance (Next Step After Classes)**
+
+## **10. Person → Student**
+
+Parent class:
+
+Person
+
+
+Variables:
+
+name
+age
+
+Child class:
+
+
+Student
+
+Variables:
+
+rollNo
+
+Display all details.
+
+```Java
+
+
+
+class Person {
+
+    int age;
+    String name;
+    void setPersonData(int age,String name){
+        this.age = age;
+        this.name = name;
+    }
+
+    
+}
+
+class Student extends Person{
+    int rollno;
+
+    void setRoolNo(int rollno){
+        this.rollno = rollno;
+    }
+
+    void displayAll(){
+        System.out.println("age of Student is : "+this.age);
+        System.out.println("name of Student is : "+this.name);
+            System.out.println("rollno of Student is : "+this.rollno);
+    }
+}
+
+    
+    
+
+   
+class Main {
+    public static void main(String[] args) {
+       System.out.println("Environment Started");
+       Student studOne = new Student();
+        studOne.setPersonData(20,"priya");
+        studOne.setRoolNo(56);
+        studOne.displayAll();
+        
+        
+    
+        
+        
+    }
+}
+
 ```
 
 
