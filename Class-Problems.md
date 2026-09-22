@@ -17,6 +17,9 @@ Sample Output
 Roll No: 101
 Name: Shiva
 Marks: 85
+
+
+
 class Student {
     String rollNo;
     String name;
