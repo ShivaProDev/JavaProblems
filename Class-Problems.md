@@ -1,4 +1,6 @@
-# **1. Student Class**
+
+# **Level 1: Basic Class Problems**
+## **1. Student Class**
 
 Create a class Student with:
 rollNo name marks
@@ -43,7 +45,7 @@ class Main {
 
 ```
 
-# **2. Rectangle Class**
+## **2. Rectangle Class**
 
 Create a class Rectangle.
 
@@ -105,7 +107,7 @@ class Main {
 
 ```
 
-# **3. Bank Account**
+## **3. Bank Account**
 
 Create a class BankAccount.
 
@@ -166,6 +168,67 @@ class Main {
     }
 }
 ```
+
+# **Level 2: Constructors**
+## **4. Employee Class**
+
+Create a class Employee.
+
+Variables:
+
+id
+name
+salary
+
+Create:
+
+Default constructor
+Parameterized constructor
+
+Display employee details.
+
+```java
+
+class Employee {
+
+    int id;
+    String name;
+    int salary;
+
+     public Employee(){
+          this.id = 1234;
+        this.name = "Emp1";
+        this.salary = 1000;
+     }
+    public Employee(int id,String name,int salary){
+
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        
+    }
+    
+
+    void displayEmployeeDetails(){
+        System.out.printf("Employee  id is : %d and Employee name is: %s and Employee Salary is :%d",this.id,this.name,this.salary).println();
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+       System.out.println("Environment Started");
+        Employee EmployeeOne = new Employee(12967,"Shiva",100);
+      
+        EmployeeOne.displayEmployeeDetails();
+        
+        
+    
+        
+        
+    }
+}
+```
+
 
 
 
